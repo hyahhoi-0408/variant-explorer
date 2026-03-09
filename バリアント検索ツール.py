@@ -11,8 +11,8 @@ with st.form("my_form"):
     # ユーザーが文字を打ち込むための箱を3つ作る
     variant_input = st.text_input("バリアント (例: c.7570+5G>A) 💡 (Mutalyzer3, clinvarで使用)", "")
     gene_name = st.text_input("遺伝子名 (例: FBN1) 💡 (NCBI, clinvarで使用)", "")
-    reference_number = st.text_input("転写産物ID (例: NM_000138.5) 💡 (Mutalyzer3で使用)", "")
-    Genomic_Description = st.text_input("ゲノム座標 (例: NC_000015.10:g.48421947C>T)  💡 (SpliceAI, CADD, gnomADで使用)", "")
+    reference_number = st.text_input("RefSeqアクセッション番号 (例: NM_000138.5) 💡 (Mutalyzer3で使用)", "")
+    Genomic_Description = st.text_input("ゲノム表記 (例: NC_000015.10:g.48421947C>T)  💡 (SpliceAI, CADD, gnomADで使用)", "")
 
     
     # 解析を開始するためのボタン
@@ -115,3 +115,4 @@ if submit_button:
             
 
             else:st.warning("SpliceAI, CADD, gnomADを使用する場合は、ゲノム座標をNC_000023.11:g.153798327A>G のような形式で入力してください。")
+

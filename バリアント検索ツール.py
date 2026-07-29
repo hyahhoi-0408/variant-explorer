@@ -82,6 +82,7 @@ if submit_button:
                   pos = match.group(2)     # 位置（例: 153798327）
                   ref = match.group(3)     # 元の塩基（例: A）
                   alt = match.group(4)     # 変わった後の塩基（例: G） 
+                  site_chrom = chrom 
 
             # 2. もし数字が「23」だったら、中身を「X」に書き換える
                   if chrom == "23":
